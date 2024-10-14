@@ -61,7 +61,7 @@ Using the historical data on used car prices from CarDekho, including various fe
 
 ## Project Evaluation Metrics:
 - **Model Performance:** Evaluated using Linear Regression, Decision Tree Regressor, Random Forest Regressor, and XGB Regressor.
-  - ![Model Performance Metrics]("screenshots/ss 1.png")
+  - ![Model Performance Metrics](screenshots/Eval_1.png)
 
 - **Hyperparameter Tuning:** Tuned the hyperparameters and retrained the models.
   - **Random Forest:** Tuning using Random Search CV.
