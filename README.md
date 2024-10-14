@@ -79,7 +79,10 @@ Using the historical data on used car prices from CarDekho, including various fe
 In summary, **XGBoost** is the optimal model for predicting used car prices in this project.
 
 ## App screenshots:
+### Home page
 ![Home page](screenshots/ss1.png)
+
+### Price prediction based on the input feautures
 ![Price prediction based on the input feautures](screenshots/ss2.png)
 
 ## Technical Tags:
