@@ -1,5 +1,4 @@
-# Project Title
-**Car Dekho - Used Car Price Prediction**
+# Car Dekho - Used Car Price Prediction 
 
 ## Skills Takeaway From This Project
 - Data Cleaning and Preprocessing
