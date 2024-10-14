@@ -60,10 +60,25 @@ Using the historical data on used car prices from CarDekho, including various fe
 - An interactive Streamlit application for real-time price predictions based on user input.
 
 ## Project Evaluation Metrics:
-- **Model Performance**: Mean Absolute Error (MAE), Mean Squared Error (MSE), R-squared.
-- **Data Quality**: Completeness and accuracy of the preprocessed data.
-- **Application Usability**: User satisfaction and feedback on the Streamlit application.
-- **Documentation**: Clarity and completeness of the project report and code comments.
+- **Model Performance:** Evaluated using Linear Regression, Decision Tree Regressor, Random Forest Regressor, and XGB Regressor.
+  - *(Include screenshot of the metrics here)*
+
+- **Hyperparameter Tuning:** Tuned the hyperparameters and retrained the models.
+  - **Random Forest:** Tuning using Random Search CV.
+    - *(Include screenshot here)*
+
+  - **XGBoost:** Tuning using Random Search CV.
+    - *(Include screenshot here)*
+
+- **Regularization Techniques:** Applied Lasso and Ridge regularization.
+  - *(Include screenshot here)*
+
+#### Conclusion for the best model:
+- Random Forest and XGBoost were the best performing models on test data based on MSE, MAE, and R² scores.
+- The XGBoost Regressor has a lower Test MSE, MAE, and MAPE, and a higher R² score compared to the Random Forest model, making it the best-performing model in this evaluation.
+- The Random Forest model is the second-best based on its relatively good performance metrics.
+### We conclude that XGBoost is the best model with the best scores among all evaluated models R² score of 0.946
+
 
 ## Technical Tags:
 Data Preprocessing, Machine Learning, Price Prediction, Regression, Python, Pandas, Scikit-Learn, Exploratory Data Analysis (EDA), Streamlit, Model Deployment.
