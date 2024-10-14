@@ -73,27 +73,45 @@ Using the historical data on used car prices from CarDekho, including various fe
 - **Regularization Techniques:** Applied Lasso and Ridge regularization.
   ![Regularization Techniques](screenshots/eval_lasso_ridge.png)
 
-#### Conclusion for the best model:
-- Random Forest and XGBoost were the best performing models on test data based on MSE, MAE, and R² scores.
-- The XGBoost Regressor has a lower Test MSE, MAE, and MAPE, and a higher R² score compared to the Random Forest model, making it the best-performing model in this evaluation.
-- The Random Forest model is the second-best based on its relatively good performance metrics.
-### We conclude that XGBoost is the best model with the best scores among all evaluated models R² score of 0.946
+### Conclusion for Best Model
+- The **XGBoost Regressor** after hypertuning outperformed all models, achieving the lowest Test MSE, MAE, and MAPE, along with the highest R² score of **0.946**.
+- The **Random Forest** model followed closely as the second-best performer, demonstrating strong metrics.
+In summary, **XGBoost** is the optimal model for predicting used car prices in this project.
 
+## App screenshots:
+![Home page](screenshots/ss1.png)
+![Price prediction based on the input feautures](screenshots/ss2.png)
 
 ## Technical Tags:
 Data Preprocessing, Machine Learning, Price Prediction, Regression, Python, Pandas, Scikit-Learn, Exploratory Data Analysis (EDA), Streamlit, Model Deployment.
 
-## Data Set:
-The dataset contains multiple Excel files, each representing its city, with columns giving an overview of each car, its details, specifications, and available features.
+### File Descriptions:
+- **Dataset/**: Contains multiple Excel files, each representing historical used car data for different cities. Each file includes columns detailing car specifications, features, and prices.
+- **screenshots/**: Stores images showcasing the final application interface and key evaluation metrics, useful for documentation and presentation purposes.
+- **streamlit_app/**: This folder contains the code for the Streamlit application. The `home.py` file serves as the main entry point for the web app, while any images used in the app are included here.
+- **.gitignore**: A file that specifies which files and directories should be ignored by Git, ensuring that unnecessary files are not tracked.
+- **Data pipeline_cardekho.ipynb**: A Jupyter Notebook that contains all the code for data processing, model development, and evaluation, serving as a comprehensive guide to the project's implementation.
+- **Preprocessed_data.xlsx**: An Excel file that contains the dataset after applying preprocessing steps, making it ready for machine learning modeling.
+- **README.md**: The documentation file that provides an overview of the project, including its objectives, methodologies, results, and technical details.
+- **combined_unpacked_df_full.xlsx**: An Excel file that presents the complete unpacked dataset combining all cities data into one file.
+- **encoded_columns.pkl**: A serialized file that contains the final encoded dataset used for training and testing the machine learning model.
+- **requirements.txt**: A text file listing all required dependencies for the project, generated from the `pip freeze` command to facilitate environment setup.
+- **xgboost_ml_model.pkl**: A saved model file that contains the trained XGBoost model for predicting used car prices, which can be loaded for inference in the Streamlit application.
 
-### Data Collected From:
-CarDekho  
-**Dataset Link**: [Dataset](#)  
-**Feature Description Link**: [Features](#)
+## Setup
 
-### Data Set Explanation:
-The dataset includes detailed information about used cars listed on CarDekho for different cities.  
-**Preprocessing Steps**: Convert the unstructured data into structured data. Handle missing values, standardize data formats, encode categorical variables, and normalize numerical features.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/naveen-pulivarti/Used-car-price-prediction-ML-app-CarDekho.git
+   cd Used-car-price-prediction-ML-app-CarDekho
+
+2. Create and activate a virtual environment:
+  python -m venv venv
+  source venv/bin/activate   # On Linux/Mac
+  venv\Scripts\activate      # On Windows
+
+3. Install the required dependencies:
+  pip install -r requirements.txt
 
 ## Project Deliverables:
 - Source code for data preprocessing and model development.
