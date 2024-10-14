@@ -61,17 +61,17 @@ Using the historical data on used car prices from CarDekho, including various fe
 
 ## Project Evaluation Metrics:
 - **Model Performance:** Evaluated using Linear Regression, Decision Tree Regressor, Random Forest Regressor, and XGB Regressor.
-  - ![Model Performance Metrics](screenshots/Eval_1.png)
+  ![Model Performance Metrics](screenshots/Eval_1.png)
 
 - **Hyperparameter Tuning:** Tuned the hyperparameters and retrained the models.
   - **Random Forest:** Tuning using Random Search CV.
-    - *(Include screenshot here)*
+  ![Random Forest Hyperparameter Tuning](screenshots/eval_RF.png)
 
   - **XGBoost:** Tuning using Random Search CV.
-    - *(Include screenshot here)*
+  ![XGBoost Hyperparameter Tuning](screenshots/eval_XGB.png)
 
 - **Regularization Techniques:** Applied Lasso and Ridge regularization.
-  - *(Include screenshot here)*
+  ![Regularization Techniques](screenshots/eval_lasso_ridge.png)
 
 #### Conclusion for the best model:
 - Random Forest and XGBoost were the best performing models on test data based on MSE, MAE, and R² scores.
